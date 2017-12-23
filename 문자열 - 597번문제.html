@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>597 : 문자열1 - 자가진단5</title>
+</head>
+<body>
+	<hr/><!--문제구분 하는 hr태그 -->
+	<h3>597 : 문자열1 - 자가진단5</h3><br/>
+	<h5>두 개의 문자열을 입력받아서 두 문자열의 길이의 합을 출력하는 프로그램을 작성하시오.
+	각 문자열의 길이는 20자 미만이다.</h5>
+
+	<h2>풀이 -------------------------------------------------</h2>
+	<!-- ===================== 문제 풀기 ===================== -->
+
+	<!--입력부-->
+	<input type="text" id="input01"/>
+	<input type="text" id="input02"/>
+
+	<button onclick="solve597();">입 력</button>
+
+	<!--출력부-->
+	<p id="output"></p>
+
+	<script>
+		var text01 = document.getElementById('input01').value;
+		var text02 = document.getElementById('input02').value;
+
+		var plus = Number(text01.length) + Number(text02.length);
+
+		document.getElementById('output').innerHTML = plus;
+
+	</script>
+
+</body>
+</html>
